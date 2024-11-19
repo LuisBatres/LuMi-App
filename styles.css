@@ -1,0 +1,397 @@
+:root {
+    --primary-color: #ff69b4;
+    --secondary-color: #fff0f5;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #212121;
+    text-decoration: none !important;
+    opacity: 1;
+}
+
+h1 strong{
+    border-bottom: 3px solid #111111;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 22px 20px;
+}
+
+.nav-links a:hover {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row_2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.col-sm-12 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.images {
+    width: 100% !important;
+    margin-bottom: 15px;
+}
+
+.col-sm-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.product-section-2 .images {
+    border: solid #e7e4e3 23px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.den_text {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.den_text a {
+    color: black;
+}
+
+.den_text a:hover {
+    color: var(--primary-color);
+}
+
+.layout-padding {
+    padding-bottom: 0px;
+    padding-top: 40px;
+}
+
+.touch_main {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+.col-md-6 {
+    position: relative;
+    width: 50%;
+    min-height: 1px;
+}
+
+.input_main {
+    width: 100%;
+    float: left;
+    background-color: var(--primary-color);
+    padding: 30px 20px 30px 20px;
+    border-radius: 12px;
+}
+
+.send_btn {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button.main_bt {
+    background: #302f2f;
+    border: none;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    margin-top: 45px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.images img {
+    height: 340px;
+    width: 305px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/api/placeholder/1200/600');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    background-color: burlywood;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* About Section */
+.about {
+    background-color: white;
+    width: 100%;
+    float: left;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.about-content {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+}
+
+/* Products Section */
+.product-section {
+    width: 100%;
+    float: left;
+    background-color: white;
+}
+
+.product-section-2 {
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+}
+
+.products {
+    padding: 4rem;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin-top: 100px;
+}
+
+.style-text {
+    width: 100%;
+    float: left;
+    color: #383737;
+    font-size: 50pt;
+    
+}
+
+.den {
+    color: var(--primary-color);
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    width: 100%;
+    float: left;
+    background-color: white;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4da6;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    display: block;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .images {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1260px;
+    }
+}
